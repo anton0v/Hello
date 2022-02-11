@@ -1,9 +1,7 @@
 #include "hello_lib.h"
-#include <conio.h>
 
 int main()
 {
-	print_hello();
-	getch();
+    print_hello();
 	return 0;
 }
