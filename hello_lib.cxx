@@ -1,6 +1,9 @@
 #include <iostream>
 
-void print_hello()
+void print_hello(char* name)
 {
-	std::cout << "Hello, World!" << std::endl;
+    if(name != NULL)
+        std::cout << "Hello, " << name << "!\n";
+    else
+        std::cout << "Hello!\n";
 }
