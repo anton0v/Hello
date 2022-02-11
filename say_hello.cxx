@@ -1,7 +1,11 @@
 #include "hello_lib.h"
+#include <iostream>
 
-int main()
+int main(int argc, char* argv[])
 {
-    print_hello();
+    if(argc < 2)
+        print_hello(NULL);
+    else
+        print_hello(argv[1]);
 	return 0;
 }
